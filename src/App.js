@@ -47,7 +47,6 @@ function deriveWinner(gameBored, players) {
       gameBored[combination[1].row][combination[1].column];
     const thirdSquareSymbol =
       gameBored[combination[2].row][combination[2].column];
-
     if (
       firstSquareSymbol &&
       firstSquareSymbol === seondSquareSymbol &&
@@ -115,6 +114,7 @@ function App() {
           <GameOver winner={winner} onRestart={handleRestart} />
         )}
       </div>
+      <div className="selectLog">Selected Log</div>
       <Log turns={gameTurns} />
     </main>
   );

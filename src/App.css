@@ -12,10 +12,10 @@ main #header{
  font-weight: 700;
  font-style: italic;
  color: rgb(225,225,225);
- padding: 50px 0;
+ padding: 20px 0;
 }
 #game-wrapper{
-  width: 100%;
+  width: 100vw; 
   display: flex;
   justify-content: center;
   
@@ -89,4 +89,43 @@ margin-bottom: 30px;
 .log-wrapper{
   display: flex;
   justify-content: center ;
+}
+.game-board-li{
+  height: 100px;
+}
+.selectLog{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+
+}
+#game-over{
+  margin-left: 30px;
+}
+#game-over p button{
+  margin-top: 10px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: none;
+}
+#game-over p button:hover{
+  background-color: rgba(63, 53, 72, 0.701);
+  color: #fff;
+}
+
+@media only screen and (max-width: 450px) {
+  #game-container{
+    padding: 20px;
+  }
+  #players .active {
+    padding: 5px;
+  }
+  .game-board-li {
+    height: 80px;
+  }
+  #game-board ol li button {
+    width: 80px;
+    height: 80px;
+    font-size: 4em;
+  }
 }
